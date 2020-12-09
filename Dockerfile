@@ -1,7 +1,7 @@
 FROM debian:buster
 
 ARG PI_TOOLS_GIT_REF=master
-ARG RUST_VERSION=stable
+ARG RUST_VERSION=nightly
 
 # update system
 RUN apt-get update && \
