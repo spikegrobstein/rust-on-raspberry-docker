@@ -1,0 +1,12 @@
+kind: pipeline
+name: publish
+
+steps:
+- name: docker
+  image: plugins/docker
+  settings:
+    repo: docker.home.spike.cx/rust-on-raspberry
+    tags: latest
+    dockerfile: Dockerfile
+
+
