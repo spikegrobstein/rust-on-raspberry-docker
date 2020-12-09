@@ -21,7 +21,6 @@ if [ -x "$HOME/deb-deps/post-install.sh" ] ; then
 fi
 
 printf "\n*** Cross compiling project ***\n"
-cd $HOME/project
 
 if [ $(uname -m) == 'x86_64' ]; then
 	TOOLCHAIN=$TOOLCHAIN_64
